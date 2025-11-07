@@ -1,6 +1,10 @@
-//your JS code here. If required.
-function pressed(){
-	let txt = document.getElementById("status");
-	txt.innerText="Entered Metaverse"
-}
+function pressed() {
+  const statusPara = document.getElementById("status");
+ 
+  // Create a new <h1> element
+  const heading = document.createElement("h1");
+  heading.textContent = "Entered Metaverse";
 
+  // Replace the paragraph with the new <h1>
+  statusPara.replaceWith(heading);
+}
