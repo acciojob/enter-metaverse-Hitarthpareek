@@ -1,10 +1,5 @@
-function pressed() {
-  const statusPara = document.getElementById("status");
- 
-  // Create a new <h1> element
-  const heading = document.createElement("h1");
-  heading.textContent = "Entered Metaverse";
-
-  // Replace the paragraph with the new <h1>
-  statusPara.replaceWith(heading);
-}
+// your JS code here. If required.
+document.getElementById("enterBtn").addEventListener("click", function () {
+  const status = document.getElementById("status");
+  status.innerHTML = "<h1>Entered Metaverse</h1>";
+});
